@@ -9,7 +9,7 @@ import javax.persistence.MappedSuperclass;
 @Getter
 @Setter
 @MappedSuperclass
-public abstract class NamedEntityImpl extends EntityImpl implements NamedEntity {
+public abstract class NamedEntityImpl extends DomainEntityImpl implements NamedEntity {
     @Column(name = "name")
     private String name;
 }

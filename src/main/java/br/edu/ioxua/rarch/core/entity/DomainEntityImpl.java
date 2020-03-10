@@ -12,9 +12,10 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
+
 @MappedSuperclass
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public abstract class EntityImpl implements Entity {
+public abstract class DomainEntityImpl implements DomainEntity {
     @Id
     @GeneratedValue
     @EqualsAndHashCode.Include
